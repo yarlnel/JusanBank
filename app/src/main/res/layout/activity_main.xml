@@ -7,12 +7,124 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtDep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Title"
+        android:text="@string/deposit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/etDep"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="@dimen/default_margin"
+        />
+
+    <EditText
+        android:id="@+id/etDep"
+        android:inputType="numberDecimal"
+        
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtDep"
+        app:layout_constraintTop_toTopOf="@id/txtDep"
+        android:layout_marginHorizontal="@dimen/default_margin"/>
+
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        tools:text="23%"
+        app:layout_constraintStart_toStartOf="@id/txtDep"
+        app:layout_constraintTop_toBottomOf="@id/txtDep"
+        android:layout_marginTop="24dp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekPercentage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        tools:progress="20"
+        android:max="50"
+        app:layout_constraintStart_toEndOf="@id/txtPercentage"
+        app:layout_constraintTop_toTopOf="@id/txtPercentage"
+        app:layout_constraintBottom_toBottomOf="@id/txtPercentage"/>
+
+    <TextView
+        android:id="@+id/txtLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="@string/txt_level_optimum"
+        tools:textColor="@color/dep_optimum"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/seekPercentage"
+        app:layout_constraintStart_toStartOf="@id/seekPercentage"
+        app:layout_constraintEnd_toEndOf="@id/seekPercentage"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtComission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:text="@string/txt_comission"
+        app:layout_constraintStart_toStartOf="@id/txtPercentage"
+        app:layout_constraintTop_toBottomOf="@id/txtPercentage"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/txtComissionValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/Title"
+        android:text="230000.00"
+        app:layout_constraintStart_toEndOf="@id/txtComission"
+        app:layout_constraintTop_toTopOf="@id/txtComission"
+        app:layout_constraintBottom_toBottomOf="@id/txtComission"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        />
+
+
+    <TextView
+        android:id="@+id/txtSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:text="@string/txt_sum"
+        app:layout_constraintStart_toStartOf="@id/txtComission"
+        app:layout_constraintTop_toBottomOf="@id/txtComission"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/txtSumValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        android:text="1230000.00"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/txtSum"
+        app:layout_constraintTop_toTopOf="@id/txtSum"
+        app:layout_constraintBottom_toBottomOf="@id/txtSum"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"
+        android:textSize="24sp"
+        android:text="@string/made_in_kz_by_leonid"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

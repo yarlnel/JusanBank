@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">JusanBank</string>
+    <string name="deposit">Депозит</string>
+    <string name="txt_comission">Комиссия</string>
+    <string name="txt_sum">Сумма</string>
+    <string name="txt_level_pens">Пенсионный</string>
+    <string name="txt_level_optimum">Оптимальный</string>
+    <string name="txt_level_comfort">Комфорт</string>
+    <string name="txt_level_business">Бизнесмен</string>
+    <string name="txt_level_max">Максимум</string>
+    <string name="made_in_kz_by_leonid">Made in 🇰🇿 BY LEONID</string>
 </resources>

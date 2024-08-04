@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dep_pens">#FDD835</color>
+    <color name="dep_optimum">#C0CA33</color>
+    <color name="dep_comfort">#7CB342</color>
+    <color name="dep_business">#43A047</color>
+    <color name="dep_max">#00897B</color>
 </resources>
